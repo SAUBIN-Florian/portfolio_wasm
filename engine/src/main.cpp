@@ -1,8 +1,22 @@
-#include <iostream>
+#include "../vendor/raylib/raylib.h"
+
+#define WIDTH 800
+#define HEIGHT 600
 
 
 int main() {
-	std::cout << "Premier commit de mon projet de portfolio avec wasm...\n";
+	InitWindow(WIDTH, HEIGHT, "Portfolio");
+	SetTargetFPS(60);
+
+	while(!WindowShouldClose()) {
+		BeginDrawing();
+		
+		ClearBackground(DARKGRAY);
+
+		EndDrawing();
+	}
+
+	CloseWindow();
 
 	return 0;
 }
